@@ -1,0 +1,30 @@
+{
+  "name": "typescript-webpack-starter",
+  "version": "1.0.0",
+  "description": "Simple Starter Project Base On Typescript & Webpack",
+  "main": "app.ts",
+  "author": "Amirhossein D. Zenoozi",
+  "license": "ISC",
+  "scripts": {
+    "clean": "rimraf build",
+    "start": "yarn && concurrently \"tsc --watch\" \"nodemon -q build/app.js\""
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "@types/express": "^4.17.13",
+    "@types/node": "^16.7.10",
+    "concurrently": "^6.2.1",
+    "express": "^4.17.1",
+    "file-replace-loader": "^1.4.0",
+    "nodemon": "^2.0.12",
+    "path": "^0.12.7",
+    "rimraf": "^3.0.2",
+    "ts-loader": "^9.2.5",
+    "typescript": "^4.4.2",
+    "webpack": "^5.51.1",
+    "webpack-cli": "^4.8.0",
+    "webpack-dev-server": "^4.1.0",
+    "webpack-node-externals": "^3.0.0",
+    "webpack-shell-plugin-next": "^2.2.2"
+  }
+}
